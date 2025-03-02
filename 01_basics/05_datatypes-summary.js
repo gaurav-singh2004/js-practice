@@ -27,11 +27,30 @@ const myfunction = function(){
 console.log(typeof myobj);
 
 
-
-
 // JavaScript is dynamically typed.
 // This means:
 // You don’t need to declare variable types explicitly.
 // A variable’s type is determined at runtime, not at compile time.
 // You can assign different types of values to the same variable without errors.
+
+// STACK(PRIMITIVE) AND HEAP(NON PRIMITIVE)
+
+let myYoutubename = "gauravsingh"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename);
+console. log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne
+
+userTwo.email = "gauravsingh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
 
