@@ -24,8 +24,35 @@
 // "Gaurav" => true
 
 
-let someNumber = 24052004
+// let someNumber = 24052004
 
-let someNumberInString = String(someNumber)
-console.log(someNumberInString);
-console.log(typeof someNumberInString)
+// let someNumberInString = String(someNumber)
+// console.log(someNumberInString);
+// console.log(typeof someNumberInString)
+
+// --------------------------operations--------------
+// console.log(2+2)
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2/3);
+// console.log(2**2);
+// console.log(2%2);
+
+
+// let str1 = "Gaurav"
+// let str2 =" Singh"
+// let str3 = str1 + str2 
+// console.log(str3)
+// console.log("1"+2);
+// console.log(1+"2");
+// console.log("1"+2+2);
+// console.log(1+2+"2");
+
+// console.log(true)
+// console.log(+true)
+// console.log(+false)
+
+let a = 2;
+let b = a++;
+let c = ++a;
+console.log(a + " " + b + " " + c + " ")
