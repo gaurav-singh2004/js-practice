@@ -1,0 +1,36 @@
+// Javascript Execution Context
+// 1. Global Execution Context
+// 2. Function Execution Context
+// 3. Eval Execution Context
+
+-> Memory creation phase 
+-> Execution phase 
+
+This image explains the **JavaScript Execution Context** in three phases:
+
+1. **Global Execution (Creation Phase)**  
+   - The `this` keyword is initialized in the global execution context.
+
+2. **Memory Phase (Hoisting)**  
+   - Variables (`val1`, `val2`, `result1`, `result2`) are allocated memory but set to `undefined`.  
+   - Function `addNum` is stored in memory as a function definition.
+
+3. **Execution Phase**  
+   - Variables are assigned actual values (`val1 = 10`, `val2 = 5`).  
+   - When `addNum(val1, val2)` is called, a **new execution context** is created:
+     - `num1 = 10`, `num2 = 5`
+     - `total = 15`
+   - After execution, the execution context is deleted.
+
+This illustrates **how JavaScript executes code step-by-step using the execution context model.**
+
+/******************* Callstacks ******************/\
+
+Call Stack in JavaScript Execution
+The Call Stack is a data structure that JavaScript uses to manage function calls. It follows LIFO (Last In, First Out) order.
+
+
+Key Takeaways:
+Each function call creates a new execution context.
+After execution, the function is removed from the stack.
+When the stack is empty, the program is complete.
