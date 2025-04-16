@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM : Gaurav</title>
+</head>
+<body style="background-color: blanchedalmond; color: blueviolet;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+    </div>
+    
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    console.log(parent.children); // HTMLCollection(5) [div.day, div.day, div.day, div.day, div.day]
+    console.log(parent); // <div class="parent">...</div>
+    console.log(parent.children[0]); // <div class="day">Monday</div>
+    console.log(parent.children[0].innerText); // Monday
+    for(let i = 0;i<parent.children.length;i++){
+        console.log(parent.children[i].innerText); // Monday Tuesday Wednesday Thursday Friday
+    }
+    parent.children[0].style.color = "red"; // Changes the color of the first child to red
+    console.log(parent.firstElementChild); // <div class="day">Monday</div>
+    console.log(parent.lastElementChild); // <div class="day">Friday</div>
+    console.log(parent.firstElementChild.innerText); // Monday
+    const dayOne = document.querySelector('.day'); // Selects the first element with class 'day'
+    const dayall = document.querySelectorAll('.day'); // Selects all elements with class 'day'
+    console.log(dayOne); // <div class="day">Monday</div>
+    console.log(dayOne.parentElement); // <div class="parent">...</div>
+    console.log("Node: ", parent.childNodes); // NodeList(7) [text, div.day, text, div.day, text, div.day, text]
+</script>
+</html>

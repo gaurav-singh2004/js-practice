@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM : Gaurav</title>
+</head>
+<body style="background-color: blanchedalmond; color: blueviolet;">
+
+    
+</body>
+<script>
+    const div = document.createElement('div'); // Creates a new div element
+    console.log(div); // <div></div>
+    div.className = "main";
+    div.id = Math.random() * 10 + 1; // Assigns a random id to the div    
+    div.innerText = "Hello everyone, Gaurav Here"; // Sets the inner text of the div
+    div.style.color = "blue"; // Sets the text color of the div to blue
+    div.style.backgroundColor = "black"; // Sets the background color of the div to black
+    div.style.fontSize = "30px"; // Sets the font size of the div to 30px
+    document.body.appendChild(div); // Appends the div to the body of the document
+</script>
+</html>
