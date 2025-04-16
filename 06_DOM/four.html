@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Singh</title>
+</head>
+<body style="background-color: blanchedalmond; color: blueviolet;">
+    <h1>Hello everyone, Gaurav Here</h1>
+    <ul class="language">
+        <li>HTML</li>
+    </ul>
+</body>
+
+<script>
+    function addLanguage(LangName){
+        const li = document.createElement('li'); // Create a new list item
+        li.innerText = LangName;
+        document.querySelector('.language').appendChild(li); // Append the new list item to the list
+    }
+    addLanguage("CSS"); // Adds CSS to the list
+    addLanguage("JavaScript"); // Adds JavaScript to the list
+    addLanguage("Java"); // Adds Java to the list
+    addLanguage("Python"); // Adds Python to the list
+
+    function addOptimal(langName){
+        const li = document.createElement('li'); // Create a new list item
+        li.appendChild(document.createTextNode(langName)); // Create a text node and append it to the list item
+        document.querySelector('.language').appendChild(li); // Append the new list item to the list
+    }
+    addOptimal("C++"); // Adds C++ to the list
+    addOptimal("C#"); // Adds C# to the list
+    addOptimal("C"); // Adds C to the list
+    
+    //edit
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerText = "HTML5"; // Changes the text of the second list item to HTML5
+    const newli = document.createElement('li'); // Create a new list item
+    newli.innerText = "Matlab";
+    secondLang.replaceWith(newli); // Replaces the second list item with the new list item
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove(); // Removes the last list item from the list
+</script>
+</html>
